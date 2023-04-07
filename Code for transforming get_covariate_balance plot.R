@@ -136,7 +136,7 @@ function (matched.sets, data, covariates, use.equal.weights = FALSE,
         pointmatrix <- pointmatrix[, -which(colnames(pointmatrix) == 
                                               treatment)]
         graphics::matplot(pointmatrix, type = "l", col = "black", #This transforms all lines to black
-                          lty = 1:nrow(pointmatrix)  #This changes linetypes for n of the pointmatrix, 
+                          lty = 1:nrow(pointmatrix),  #This changes linetypes for n of the pointmatrix, 
                           ylab = ylab, xaxt = "n", 
                           ...)
         graphics::lines(x = 1:nrow(pointmatrix), y = as.numeric(treated.data), 
