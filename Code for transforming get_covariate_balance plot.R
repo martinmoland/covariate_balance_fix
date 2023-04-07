@@ -1,3 +1,5 @@
+#The code has been tested with three variables, PanelMatch version 2.0.1 and R 4.1.2
+
 #####Open trace window for function and allow for edits#######
 trace("get_covariate_balance", edit = TRUE)
 
